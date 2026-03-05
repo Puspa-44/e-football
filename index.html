@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eFootball Nepal Community</title>
+    <link rel="icon" type="image/svg+xml" href="download.svg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ===== INTRO LOADER ===== -->
+<div id="loader">
+    <canvas id="particles-canvas"></canvas>
+    <div class="loader-inner">
+        <div class="loader-logo-wrap">
+            <div class="loader-bolt">⚡</div>
+            <div class="loader-logo-text">
+                <span class="ll-e">e</span><span class="ll-foot">Football</span><span class="ll-np">NP</span>
+            </div>
+        </div>
+        <div class="loader-tagline">Nepal's #1 eFootball Community</div>
+        <div class="loader-bar-wrap">
+            <div class="loader-bar" id="loaderBar"></div>
+        </div>
+        <div class="loader-percent" id="loaderPercent">0%</div>
+    </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div id="main-content">
+
+<!-- NAVBAR -->
+<nav id="navbar">
+    <a href="#hero" class="logo">⚡ <span class="logo-e">e</span>Football<span class="logo-np">NP</span></a>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#community">Community</a></li>
+        <li><a href="#find-opponent">Find Opponent</a></li>
+        <li><a href="#community" class="nav-btn">Join Now</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
+        <span></span><span></span><span></span>
+    </button>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+    <div class="hero-orb orb1"></div>
+    <div class="hero-orb orb2"></div>
+    <div class="hero-content">
+        <div class="hero-badge"><i class="fas fa-futbol"></i> Nepal's #1 eFootball Community</div>
+        <h1>Play. Compete.<br><span class="highlight">Dominate.</span></h1>
+        <p>Join thousands of eFootball players across Nepal. Find opponents, build your Dream Team, and rise to the top of the leaderboard.</p>
+        <div class="hero-btns">
+            <a href="#find-opponent" class="btn-primary"><i class="fas fa-crosshairs"></i> Find Opponent</a>
+            <a href="#community" class="btn-outline"><i class="fab fa-whatsapp"></i> Join Community</a>
+        </div>
+        <div class="hero-stats">
+            <div class="stat"><div class="stat-num" data-target="1200">0</div><div class="stat-lbl">Members</div></div>
+            <div class="stat-divider"></div>
+            <div class="stat"><div class="stat-num" data-target="350">0</div><div class="stat-lbl">Daily Matches</div></div>
+            <div class="stat-divider"></div>
+            <div class="stat"><div class="stat-num" data-target="24">0</div><div class="stat-lbl">Hrs Active</div></div>
+        </div>
+    </div>
+    <div class="hero-scroll-hint"><i class="fas fa-chevron-down"></i></div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <div class="container about-grid">
+        <div class="about-visual reveal">
+            <div class="about-card-main">
+                <div class="about-card-icon">⚽</div>
+                <h3>eFootball Nepal</h3>
+                <p>Successor to the legendary PES series — now free-to-play with real physics, Dream Team, and global tournaments available on all platforms.</p>
+                <div class="about-card-badges">
+                    <span><i class="fas fa-check-circle"></i> Free to Play</span>
+                    <span><i class="fas fa-check-circle"></i> Cross Platform</span>
+                </div>
+            </div>
+            <div class="floating-tag tag-top"><i class="fas fa-trophy"></i> Tournament Ready</div>
+            <div class="floating-tag tag-bot"><i class="fas fa-wifi"></i> Always Online</div>
+        </div>
+        <div class="about-text reveal">
+            <p class="label">Who We Are</p>
+            <h2>Nepal Ko <span>eFootball</span><br>Samudaya</h2>
+            <p>Hami Nepal ka eFootball players haru ko ek active online community ho. Yahaan tmi naya opponents bhetna, tournament khelna, ra tips share garna sakxau.</p>
+            <p>eFootball (formerly PES) — KONAMI ko free-to-play football game — PC, PlayStation, Xbox ra mobile sabai ma available xa.</p>
+            <ul class="about-list">
+                <li><i class="fas fa-check"></i> Free-to-play on all platforms</li>
+                <li><i class="fas fa-users"></i> Active Nepali player community</li>
+                <li><i class="fas fa-gamepad"></i> Weekly tournaments & events</li>
+                <li><i class="fas fa-star"></i> Dream Team building tips</li>
+                <li><i class="fab fa-whatsapp"></i> 24/7 WhatsApp support</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- FEATURES -->
+<section id="features">
+    <div class="container">
+        <p class="label center reveal">Game Features</p>
+        <h2 class="section-title reveal">Kina <span>eFootball</span> Khelne?</h2>
+        <p class="section-desc reveal">KONAMI ko eFootball ma yo sab features xa jo timilai real football experience dinxa.</p>
+        <div class="features-grid">
+            <div class="feature-card reveal">
+                <div class="feature-icon" style="background:linear-gradient(135deg,#7B2FBE,#9d4edd)">🏆</div>
+                <h3>Dream Team Builder</h3>
+                <p>Messi dekhi legendary PES players samma — आफ्नो sapna team banau. Boosters use garera players ko stats enhance gara.</p>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-icon" style="background:linear-gradient(135deg,#f59e0b,#ef4444)">⚡</div>
+                <h3>Online Ranked Matches</h3>
+                <p>Division 1 samma pugna eFootball League ma compete gara. Cross-gen matchmaking ra real-time online battles khelau.</p>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-icon" style="background:linear-gradient(135deg,#10b981,#059669)">👥</div>
+                <h3>Co-op 3v3 Mode</h3>
+                <p>Saathi haru sangai 3v3 co-op matches khelau. Strangers sanga match room join gara ra naya bonds banau.</p>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-icon" style="background:linear-gradient(135deg,#3b82f6,#1d4ed8)">🌍</div>
+                <h3>My League Mode</h3>
+                <p>World ka leagues ma participate gara. Real clubs sanga season khelau ra promotion ra relegation anubhav gara.</p>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-icon" style="background:linear-gradient(135deg,#ec4899,#be185d)">🎯</div>
+                <h3>Real Physics Engine</h3>
+                <p>Improved dribbling, tight close-control, ra congested area ma brilliant play — split-second decisions replicate gara.</p>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-icon" style="background:linear-gradient(135deg,#f97316,#c2410c)">📱</div>
+                <h3>Cross-Platform Play</h3>
+                <p>PC, PS4/PS5, Xbox, ra mobile — sabai ma ek nai Dream Team. Jaba bata pani khelna milxa!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- WHATSAPP COMMUNITY -->
+<section id="community">
+    <div class="container">
+        <div class="community-inner reveal">
+            <div class="wa-pulse-ring"></div>
+            <div class="wa-icon-wrapper" onclick="joinWhatsApp()">
+                <i class="fab fa-whatsapp"></i>
+            </div>
+            <h2>Hamro WhatsApp<br>Community Join Gara!</h2>
+            <p>Nepal ka 1200+ eFootball players ko active community ma join gara. Daily matches, tournaments, tips, ra opponent finding — sab ek thau ma!</p>
+            <div class="community-perks">
+                <div class="perk"><i class="fas fa-bolt"></i> Instant Opponent</div>
+                <div class="perk"><i class="fas fa-trophy"></i> Weekly Tournaments</div>
+                <div class="perk"><i class="fas fa-lightbulb"></i> Pro Tips</div>
+                <div class="perk"><i class="fas fa-users"></i> Friendly Community</div>
+            </div>
+            <a href="#" class="btn-whatsapp" id="waBtn" onclick="joinWhatsApp(event)">
+                <i class="fab fa-whatsapp"></i> Community Join Gara — FREE!
+            </a>
+            <p class="member-count">Already <span>1,247 members</span> online right now 🟢</p>
+        </div>
+    </div>
+</section>
+
+<!-- FIND OPPONENT -->
+<section id="find-opponent">
+    <div class="container">
+        <p class="label center reveal">Ready to Play?</p>
+        <h2 class="section-title reveal">Opponent <span>Khoja</span></h2>
+        <p class="section-desc reveal">Opponent khojda hamro WhatsApp community join gara — tyahaan 1200+ players sadhai available xa!</p>
+
+        <div class="find-box reveal">
+            <div class="find-icon">🎮</div>
+            <h3>Opponent Khojnu xa?</h3>
+            <p>Hamro eFootball Nepal WhatsApp Community ma <strong>1,200+ active players</strong> xa. Jaba pani, jati bela pani — tmi ko lagi opponent ready xa!</p>
+            <div class="find-steps">
+                <div class="step">
+                    <div class="step-num">1</div>
+                    <div class="step-text">
+                        <strong>Community Join Gara</strong>
+                        <span>Tala ko button click gara</span>
+                    </div>
+                </div>
+                <div class="step-arrow"><i class="fas fa-chevron-right"></i></div>
+                <div class="step">
+                    <div class="step-num">2</div>
+                    <div class="step-text">
+                        <strong>Message Patha</strong>
+                        <span>"Opponent Chaiyo" lekha</span>
+                    </div>
+                </div>
+                <div class="step-arrow"><i class="fas fa-chevron-right"></i></div>
+                <div class="step">
+                    <div class="step-num">3</div>
+                    <div class="step-text">
+                        <strong>Match Khelau!</strong>
+                        <span>Connect ra enjoy!</span>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn-find-wa" onclick="joinWhatsApp(event)">
+                <i class="fab fa-whatsapp"></i>
+                Opponent Khojn Group Join Gara!
+            </a>
+            <p class="find-note"><i class="fas fa-shield-alt"></i> Free, Safe ra Nepali players matra</p>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container footer-grid">
+        <div class="footer-brand">
+            <a href="#" class="logo footer-logo">⚡ <span class="logo-e">e</span>Football<span class="logo-np">NP</span></a>
+            <p>Nepal ko eFootball players ko lagi baneko community hub. Khelau, jitau, ra Nepal ko naam roshan garau!</p>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="#" aria-label="WhatsApp" onclick="joinWhatsApp(event)"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" aria-label="Discord"><i class="fab fa-discord"></i></a>
+            </div>
+        </div>
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#community">Community</a></li>
+                <li><a href="#find-opponent">Find Opponent</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>eFootball</h4>
+            <ul>
+                <li><a href="#">Dream Team Tips</a></li>
+                <li><a href="#">Best Formations</a></li>
+                <li><a href="#">Player Rankings</a></li>
+                <li><a href="#">Update News</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Community</h4>
+            <ul>
+                <li><a href="#" onclick="joinWhatsApp(event)">WhatsApp Group</a></li>
+                <li><a href="#">Leaderboard</a></li>
+                <li><a href="#">Tournaments</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2026 eFootball Nepal Community. Made with ❤️ for Nepali football fans.</p>
+        <p class="footer-credit">Created by <span>Puspa Raj CHyz</span> 🎮</p>
+        <p class="footer-disc">eFootball™ is a trademark of KONAMI. This is a fan community site.</p>
+    </div>
+</footer>
+
+<!-- Scroll to Top -->
+<button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+</button>
+
+<!-- Toast -->
+<div class="toast" id="toast"></div>
+
+</div><!-- /main-content -->
+
+<script src="Script.js"></script>
+</body>
+</html>
